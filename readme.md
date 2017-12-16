@@ -19,7 +19,7 @@ CRUD Operations to test:
       - country(maxSize = 55, no blanks, nullable)
       - recordLabel(maxSize = 50), no blanks, nullable)
     - Create / Update Operations using data not within defined constraints as listed above
-	- Attempts to create or update that result in duplicate rows, as defined by the `unique`constraint on `name` should be rejected.
+	- Attempts to create or update that result in duplicate rows, as defined by the `unique`constraint on `name`, should be rejected.
 2. Read (`GET`)
   - Display 1 record [http://localhost:8080/albums/&lt;id&gt;](http://localhost:8080/albums/1)
   - List all records [http://localhost:8080/albums](http://localhost:8080/albums)
