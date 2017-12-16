@@ -1,0 +1,7 @@
+import cgraham.projects.grails.rest.Album
+
+model {
+	Album album
+}
+
+json tmpl.album(album)

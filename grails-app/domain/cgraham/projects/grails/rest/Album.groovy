@@ -8,17 +8,16 @@ class Album {
 	String name
 	String artist
 	String genre
+    String country
 	String recordLabel
-	String country
-
-	short yearReleased
 
     static constraints = {
-    	name maxSize: 255, blank: false, unique: ['artist', 'recordLabel', 'country', 'yearReleased']
-    	artist maxSize: 255, blank: false
-    	genre inList: ['Blues', 'Brass & Military', 'Children\'s', 'Classical', 'Country', 'Electronic', 'Folk', 'Funk / Soul', 'Hip-Hop', 'Jazz', 'Latin','Reggae', 'Rock', 'Stage & Screen', 'World']
-    	recordLabel blank: false, nullable: true
-        country maxSize: 55, nullable: true
-    	yearReleased min:(short)1900
+    	name maxSize: 125, blank: false, unique: ['artist', 'genre', 'country', 'recordLabel']
+    	artist maxSize: 100, blank: false
+    	genre inList: ['Blues', 'Brass & Military', 'Children\'s', 'Classical', 'Country',
+    				   'Electronic', 'Folk / Traditional', 'Funk / Soul', 'Hip-Hop', 'Jazz',' R&B', 
+    				   'Reggae', 'Rock', 'Stage & Screen', 'World']
+        country maxSize: 55, blank: false, nullable: true
+    	recordLabel maxSize: 50, blank: false, nullable: true
     }
 }

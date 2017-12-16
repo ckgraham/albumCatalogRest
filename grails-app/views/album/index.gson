@@ -1,0 +1,8 @@
+import cgraham.projects.grails.rest.Album
+
+model {
+	Iterable<Album> albumList
+}
+
+json tmpl.album(albumList ?: [])
+

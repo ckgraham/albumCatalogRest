@@ -1,0 +1,14 @@
+import cgraham.projects.grails.rest.Album
+
+model {
+	Album album
+}
+
+json {
+	id album.id
+	name album.name
+	artist album.artist
+	genre album.genre
+	country album.country
+	recordLabel album.recordLabel
+}
