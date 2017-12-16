@@ -23,4 +23,4 @@ CRUD Operations to test:
   - Read Operations receving JSON or XML forms (JSON is the default)
     - JSON [http://localhost:8080/albums](http://localhost:8080/albums)
     - XML [http://localhost:8080/albums.xml](http://localhost:8080/albums.xml)
-4. Deleting rows should be isolated to only those specified in the `DELETE` request.
+4. Delete (`Delete`) - Deleting rows should be isolated to only those specified in the `DELETE` request.
